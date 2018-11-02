@@ -3,5 +3,8 @@ body{
   padding: 20px;
 }
 .restaurant{
-  margin-left: 100px; 
+  margin-left: 100px;
+}
+#homeScreen{
+  background-color: #B0C4DE;
 }

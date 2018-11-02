@@ -1,14 +1,15 @@
 /* applies to anything of class "example-class-selector" */
-.example-class-selector {
-	margin-top: 2em;
+.header {
+	margin-top: 20px;
 }
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
-.example-class-selector p {
+#homeScreen{
 	/* Colors are in hexadecimal: http://www.colorpicker.com/ */
-	color: #CC00AA;
+	background-color: : #CC00AA;
 }
 body {
-  border: 5px line blue;
+  border: 5px
+	line blue;
   padding: 10px;
 }
