@@ -1,6 +1,6 @@
-/* applies to anything of class "example-class-selector" */
-.header {
-	margin-top: 20px;
+body{
+  border: 1px dotted gray;
+  padding: 20px;
 }
 
 /* applies to any <p> descendants of an element of class "example-class-selector" */
