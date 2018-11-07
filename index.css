@@ -1,11 +1,13 @@
 /* applies to anything of class "example-class-selector" */
 body {
-	font-family: "Pacifico", Pacifico, monospace;
+	font-family: "Times New Roman",monospace;
 	text-align: center;
 	/*background: #e6e6e6; */
 }
 .header{
 	padding: 25px;
+	font-family: "Pacifico", Pacifico, monospace;
+	text-align: center;
 }
 #homeScreen {
 	background: #B0C4DE;
@@ -13,8 +15,11 @@ body {
 	font-size: 1.5em;
 }
 a{
-	color: white;
 	text-decoration: none;
+	color: black;
+}
+a:hover{
+	cursor: pointer; 
 }
 /*a:link, a:visited {
     background-color: white;
