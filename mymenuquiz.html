@@ -11,7 +11,7 @@
   <a href="index.html">
     <h1>EasyEats</h1>
   </a>
-  <p>Easy eats for lazy kids</p>
+  <p>easy eats for lazy kids</p>
 </div>
 
 <a href="index.html">
@@ -21,19 +21,97 @@
 
 <body>
   <!-- quiz questions-->
-  <h1>My Menu Quiz</h1>
-  <ol>
-    <h2>[ ] vegetarian?</h2>
-    <h2>[ ] vegan?</h2>
-  <h2>Prices?</h2>
-  <ol>
-    <li> [ ] $0-$5</li>
-    <li> [ ] $5-$10</li>
-    <li> [ ] $10-$15</li>
-  </ol>
-</ol>
+  <h1>MyMenu Quiz</h1>
+    <!-- first question-->
+    <div class=question id=questionOne>
+    <h2>
+      <p style="text-align:left">Do you have any dietary restrictions?
+    </h2>
+      <div class=answers id=questionOneAnswers>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">vegetarian</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">vegan</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">pescatarian</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">no restrictions</label>
+        </h3>
+        <h3>
+          <input type="radio button"</input>
+          <label class="answers">other</label>
+        </h3>
+      </div>
+    </div>
+    <h3></h3>
+    <!-- second question-->
+    <div class=question id=questionTwo>
+    <h2>
+      <p style="text-align:left">Do you have any allergies?
+    </h2>
+      <div class=answers id=questionTwoAnswers>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">dairy</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">eggs</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">nuts</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">no allergies</label>
+        </h3>
+        <h3>
+          <input type="radio button"</input>
+          <label class="answers">other</label>
+        </h3>
+      </div>
+    </div>
+    <h3></h3>
+    <!-- third question-->
+    <div class=question id=questionThree>
+    <h2>
+      <p style="text-align:left">What price are you willing to pay for your food?
+    </h2>
+      <div class= question id=questionThreeAnswers>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">$5 - $10</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">$10 - $15</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">$15 - $20</label>
+        </h3>
+        <h3>
+          <input type="radio"</input>
+          <label class="answers">no preference</label>
+        </h3>
+        <h3>
+          <input type="radio button"</input>
+          <label class="answers">other</label>
+        </h3>
+      </div>
+    </div>
+    <h3></h3>
+  <!-- when quiz is completed-->
   <a href= "quizresults.html">
-    <p>DONE</p>
+    <h1><button type="button">Done</h1>
   </a>
 
 </body>
