@@ -1,0 +1,32 @@
+/* applies to anything of class "example-class-selector" */
+body {
+	font-family: "Pacifico", Pacifico, monospace;
+	text-align: center;
+	/*background: #e6e6e6; */
+}
+.header{
+	padding: 25px;
+}
+#homeScreen {
+	background: #B0C4DE;
+	color: white;
+	font-size: 1.5em;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+/*a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #B0C4DE;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: #B0C4DE;
+    color: white;
+}*/
