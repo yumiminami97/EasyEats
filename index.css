@@ -10,9 +10,34 @@ body {
 	text-align: center;
 }
 #homeScreen {
+	font-family: "Pacifico", Pacifico, monospace;
 	background: #B0C4DE;
 	color: white;
 	font-size: 1.5em;
+}
+#questionOne {
+	padding-bottom: 20px;
+	border-style: dotted;
+}
+#questionOneAnswers {
+	font-family: "Quicksand";
+	text-align: left;
+}
+#questionTwo {
+	padding-bottom: 20px;
+	border-style: dotted;
+}
+#questionTwoAnswers {
+	font-family: "Quicksand";
+	text-align: left;
+}
+#questionThree {
+	padding-bottom: 20px;
+	border-style: dotted;
+}
+#questionThreeAnswers {
+	font-family: "Quicksand";
+	text-align: left;
 }
 a{
 	text-decoration: none;
