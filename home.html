@@ -10,13 +10,65 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
-  $(document).click(function(){
-    $("#maps").click(function(){
-      $("#image").slideDown("fast");
-    });
-  });
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+  }
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
   </script>
   <style>
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #B0C4DE;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav a:visited{color:#B0C4DE;}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
   .option{
     text-align: center;
     font-family: "Quicksand";
@@ -43,8 +95,8 @@
     background-color: white;
     color: black;
     border: 2px solid #B0C4DE;
-    border-top: 0px;
-    padding: 2.5px 20px;
+    border-top: 2px solid #B0C4DE;
+    padding: 2px 20px;
     padding-bottom: 0.5px
     text-align: center;
     text-decoration: none;
@@ -59,6 +111,8 @@
 </head>
 <body>
   <div class= header id=homeScreen>
+    <span onclick="openNav()">
+      <p style= "text-align:left;font-size: 20px">=</p></span>
     <a href="home.html">
       <h1 style= "color:white">EasyEats</h1>
     </a>
@@ -66,25 +120,31 @@
   </div>
   <div class= header id=maps>
     <a href="maps.html">
-      <p style= "font-size: 0.5em">Maps</p>
+      <p>Maps</p>
     </a>
   </div>
+  <div id="mySidenav" class="sidenav">
+    <h1>Hi, Mikee-Lindsay!</h1>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="profile.html">My Profile</a>
+    <a href="maps.html">Maps</a>
+    <a href="places.html">Places</a>
+    <a href="mymenuquiz.html">MyMenu</a>
+  </div>
+  <!-- Use any element to open the sidenav -->
 
-  <div class="option" id="myMenu>">
-    <a href="mymenuquiz.html">
-      <h2>MyMenu
-    <!---       <button type="button">My Menu </button> --->
-      </h2>
-    </a>
-    <p>A personalized menu suited to meet all of your needs</p>
-  </div>
-  <div class="option" id="places">
-    <a href="places.html">
-      <h2>Places</h2>
-  <!---    <h2><button type="button">Places</button></h2>  --->
-    </a>
-    <p>A list of all the food places at UCSD<p>
+    <div class="option" id="myMenu>">
+      <a href="mymenuquiz.html">
+        <h2>MyMenu</h2></a>
+        <p></p>
+      <p>A personalized menu suited to meet all of your needs</p>
     </div>
-
+    <div class="option" id="places">
+      <a href="places.html">
+        <h2>Places</h2>
+      </a>
+      <p></p>
+      <p>A list of all the food places at UCSD<p>
+      </div>
   </body>
   </html>
