@@ -72,6 +72,36 @@ body {
 	border-style: solid;
 	padding-bottom: 20px;
 			}
+#placeOne {
+	padding-bottom: 20px;
+	border-style: dotted;
+	font-family: "Quicksand";
+	background-image: url("Santorini.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#placeTwo {
+	padding-bottom: 20px;
+	border-style: dotted;
+	font-family: "Quicksand";
+	background-image: url("Panda.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#placeThree {
+	padding-bottom: 20px;
+	border-style: dotted;
+	font-family: "Quicksand";
+	background-image: url("Lemongrass.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+#placeSubtitle {
+	font-family: "Quicksand";
+}
 a{
 	text-decoration: none;
 	color: black;
