@@ -1,10 +1,14 @@
 <!doctype html>
-
 <html>
 <head>
+  <title>Team Incredibles Project</title>
   <meta charset="utf-8">
-  <title>Santorini Greek Island Grill</title>
-  <link	href="index.css"	rel="stylesheet"	/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link	href="index.css"	rel="stylesheet"/>
+  <!---bootstrap--->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
   /* Set the width of the side navigation to 250px */
   function openNav() {
@@ -16,7 +20,8 @@
   }
   </script>
   <style>
-  #back{text-align: left;}
+  #click{text-align: left}
+  /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -66,37 +71,44 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-  .restaurant{
+  .option{
     text-align: center;
-    border:solid;
-    border-radius: 50px;
-    font-family:monospace;
+    padding: 20px;
   }
-  .rPage{
-    text-decoration: underline;
-    text-align: left;
-    padding-left: 50px;
-    font-size: 30px;
+  .option a:link, a:visited{
+    background-color: white;
+    color: #B0C4DE;
+    border: 2px solid #B0C4DE;
+    padding: 2.5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
   }
-  .hours{
-    text-align: left;
-    padding-left: 75px;
-    font-size: 22px;
+  .option a:hover, a:active {
+    background-color: #B0C4DE;
+    color: white;
   }
-  .currTime{
-    text-decoration: underline;
-    text-align: left;
-    padding-left: 50px;
-    font-size: 30px;
+  #maps{
+    padding-top: 0px;
   }
-  .waitTime{
-    text-align: left;
-    padding-left: 75px;
-    font-size: 22;
+  #maps a:link, a:visited{
+    background-color: white;
+    color: black;
+    border: 2px solid #B0C4DE;
+    border-top: 2px solid #B0C4DE;
+    padding: 2px 20px;
+    padding-bottom: 0.5px
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
   }
-  </style>
+  #maps a:hover, a:active {
+    background-color: #B0C4DE;
+    color: white;
+  }
+}
+</style>
 </head>
-
 <body>
   <div class= header id=homeScreen>
     <span onclick="openNav()">
@@ -104,11 +116,13 @@
     <a href="home.html">
       <h1 style= "color:white">EasyEats</h1>
     </a>
-    <p>Easy eats for lazy kids</p>
+    <p>easy eats for lazy kids</p>
   </div>
-  <div class= header id=back>
-  <a href="places.html"><p>< Places</p></a>
-</div>
+  <div class= header id=maps>
+    <a href="maps.html">
+      <p>Maps</p>
+    </a>
+  </div>
   <div id="mySidenav" class="sidenav">
     <h1>Hi, Mikee-Lindsay!</h1>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -116,29 +130,22 @@
     <a href="maps.html">Maps</a>
     <a href="places.html">Places</a>
     <a href="mymenuquiz.html">MyMenu</a>
+    <a href="#">Contact</a>
   </div>
-  <!-- santorini info page-->
-  <h1>Santorini</h1>
-  <p>Greek Island Grill</p>
-  <div class= rPage id=sPage>
-    <h1>Hours:</h2>
+  <!-- Use any element to open the sidenav -->
+
+    <div class="option" id="myMenu>">
+      <a href="mymenuquiz.html">
+        <h2>MyMenu</h2></a>
+        <p></p>
+      <p>A personalized menu suited to meet all of your needs</p>
     </div>
-      <div class= hours id=sHours>
-      <p>Mon-Fri: 7:00am - 6:50pm</p>
-      <p>Sat: 8:00am - 11:0pm</p>
-      <p>Sat: 8:00am - 10:0pm</p>
-    </div>
-    <div class= currTime id=sCurrWait>
-      <h1>Current Wait:</h2>
+    <div class="option" id="places">
+      <a href="places.html">
+        <h2>Places</h2>
+      </a>
+      <p></p>
+      <p>A list of all the food places at UCSD<p>
       </div>
-        <div class= waitTime id=sWaitTime>
-        <p>Avg</p>
-        <p>Wait</p>
-        <p>Time</p>
-      </div>
-  <div class= restaurant id=santorini>
-  <a href="santorinimenu.html">
-    <p>Santorini Menu</p>
-  </a>
-</div>
-</html>
+  </body>
+  </html>
