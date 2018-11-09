@@ -40,22 +40,25 @@ body {
 	text-align: left;
 }
 #resultSubtitle {
-	font-family: "Quicksand"
+	font-family: "Quicksand";
 }
 #resultOne {
 	padding-bottom: 20px;
 	border-style: dotted;
-	font-family: "Quicksand"
+	font-family: "Quicksand";
 }
 #resultTwo {
 	padding-bottom: 20px;
 	border-style: dotted;
-	font-family: "Quicksand"
+	font-family: "Quicksand";
 }
 #resultThree {
 	padding-bottom: 20px;
 	border-style: dotted;
-	font-family: "Quicksand"
+	font-family: "Quicksand";
+}
+#nutritionOne {
+	font-family: "Quicksand";
 }
 a{
 	text-decoration: none;
