@@ -1,6 +1,6 @@
 /* applies to anything of class "example-class-selector" */
 body {
-	font-family: "Times New Roman",monospace;
+	font-family: "Pacifico",monospace;
 	text-align: center;
 	/*background: #e6e6e6; */
 }
@@ -38,6 +38,27 @@ body {
 #questionThreeAnswers {
 	font-family: "Quicksand";
 	text-align: left;
+}
+#resultSubtitle {
+	font-family: "Quicksand";
+}
+#resultOne {
+	padding-bottom: 20px;
+	border-style: dotted;
+	font-family: "Quicksand";
+}
+#resultTwo {
+	padding-bottom: 20px;
+	border-style: dotted;
+	font-family: "Quicksand";
+}
+#resultThree {
+	padding-bottom: 20px;
+	border-style: dotted;
+	font-family: "Quicksand";
+}
+#nutritionOne {
+	font-family: "Quicksand";
 }
 a{
 	text-decoration: none;
