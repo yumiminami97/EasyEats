@@ -60,6 +60,18 @@ body {
 #nutritionOne {
 	font-family: "Quicksand";
 }
+#sMeal1 {
+	border-style: solid;
+	padding-bottom: 20px;
+	}
+#sMeal2 {
+	border-style: solid;
+	padding-bottom: 20px;
+		}
+#sMeal3 {
+	border-style: solid;
+	padding-bottom: 20px;
+			}
 a{
 	text-decoration: none;
 	color: black;
