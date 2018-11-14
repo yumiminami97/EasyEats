@@ -23,6 +23,7 @@ body {
 	font-family: "Quicksand";
 	text-align: left;
 }
+
 #questionTwo {
 	padding-bottom: 20px;
 	border-style: dotted;
@@ -102,6 +103,7 @@ body {
 #placeSubtitle {
 	font-family: "Quicksand";
 }
+
 a{
 	text-decoration: none;
 	color: black;
