@@ -102,95 +102,151 @@
     <a href="places.html">Places</a>
     <a href="mymenuquiz.html">MyMenu</a>
   </div>
+
+  <style>
+
+  .answers {
+  	font-family: "Quicksand";
+      display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 20px;
+      font-size: 22px;
+  }
+  /* Hide the browser's default radio button */
+  .answers input {
+      position: absolute;
+      opacity: 0;
+  }
+  /* Create a custom radio button */
+  .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #eee;
+      border-radius: 50%;
+  }
+  /* On mouse-over, add a grey background color */
+  .answers:hover input ~ .checkmark {
+      background-color: #ccc;
+  }
+  /* When the radio button is checked, add a blue background */
+  .answers input:checked ~ .checkmark {
+      background-color: #2196F3;
+  }
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .answers:after {
+      content: "";
+      position: absolute;
+      display: none;
+  }
+  /* Show the indicator (dot/circle) when checked */
+  .answers input:checked ~ .checkmark:after {
+      display: block;
+  }
+  /* Style the indicator (dot/circle) */
+  .answers .checkmark:after {
+   	top: 9px;
+  	left: 9px;
+  	width: 8px;
+  	height: 8px;
+  	border-radius: 50%;
+  	background: white;
+  }
+  </style>
+
   <!-- quiz questions-->
   <h1>MyMenu Quiz</h1>
-    <!-- first question-->
+    <!-- question one-->
     <div class=question id=questionOne>
     <h2>
       <p style="text-align:left">Do you have any dietary restrictions?
     </h2>
-      <div class=answers id=questionOneAnswers>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">vegetarian</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">vegan</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">pescatarian</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">no restrictions</label>
-        </h3>
-        <h3>
-          <input type="radio button"</input>
-          <label class="answers">other</label>
-        </h3>
+      <div class= question id=questionOneAnswers>
+        <label class="answers">vegetarian
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">vegan
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">pescatarian
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">no restrictions
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">other
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
       </div>
     </div>
     <h3></h3>
-    <!-- second question-->
+    <!-- question two-->
     <div class=question id=questionTwo>
     <h2>
       <p style="text-align:left">Do you have any allergies?
     </h2>
-      <div class=answers id=questionTwoAnswers>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">dairy</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">eggs</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">nuts</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">no allergies</label>
-        </h3>
-        <h3>
-          <input type="radio button"</input>
-          <label class="answers">other</label>
-        </h3>
+      <div class= question id=questionTwoAnswers>
+        <label class="answers">dairy
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">eggs
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">nuts
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">no allergies
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">other
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
       </div>
     </div>
     <h3></h3>
-    <!-- third question-->
+    <!-- question three-->
     <div class=question id=questionThree>
     <h2>
       <p style="text-align:left">What price are you willing to pay for your food?
     </h2>
       <div class= question id=questionThreeAnswers>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">$5 - $10</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">$10 - $15</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">$15 - $20</label>
-        </h3>
-        <h3>
-          <input type="radio"</input>
-          <label class="answers">no preference</label>
-        </h3>
-        <h3>
-          <input type="radio button"</input>
-          <label class="answers">other</label>
-        </h3>
+        <label class="answers">$5 - $10
+          <input type="radio" checked="checked" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">$10 - $15
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">$15 - 20
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">no preference
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
+        <label class="answers">other
+          <input type="radio" name="radio">
+          <span class="checkmark"></span>
+        </label>
       </div>
     </div>
     <h3></h3>
+
   <!-- when quiz is completed-->
   <div id=submit>
   <a href= "quizresults.html">
