@@ -102,6 +102,18 @@ body {
 }
 #placeSubtitle {
 	font-family: "Quicksand";
+	font-size: 10px;
+}
+#ucsdFoodTitle{
+	font-size: 35px;
+	margin-top: -65px;
+	margin-bottom: -30px;
+}
+#psm1 {
+	font-size: 13;
+}
+#sMenu {
+	margin-top: 50px;
 }
 
 a{
