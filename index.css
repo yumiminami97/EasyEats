@@ -13,30 +13,30 @@ body {
 	font-family: "Pacifico", Pacifico, monospace;
 	background: #B0C4DE;
 	color: white;
-	font-size: 1.5em;
+	font-size: 20px;
 }
-#questionOne {
+#q1 {
 	padding-bottom: 20px;
 	border-style: dotted;
 }
-#questionOneAnswers {
+#q1answers {
 	font-family: "Quicksand";
 	text-align: left;
 }
 
-#questionTwo {
+#q2 {
 	padding-bottom: 20px;
 	border-style: dotted;
 }
-#questionTwoAnswers {
+#q2answers {
 	font-family: "Quicksand";
 	text-align: left;
 }
-#questionThree {
+#q3 {
 	padding-bottom: 20px;
 	border-style: dotted;
 }
-#questionThreeAnswers {
+#q3answers {
 	font-family: "Quicksand";
 	text-align: left;
 }
@@ -102,6 +102,24 @@ body {
 }
 #placeSubtitle {
 	font-family: "Quicksand";
+	font-size: 10px;
+}
+#ucsdFoodTitle{
+	font-size: 35px;
+	margin-top: -65px;
+	margin-bottom: -30px;
+}
+#psm1 {
+	font-size: 13;
+}
+#sMenu {
+	margin-top: 50px;
+}
+.sMeal {
+	font-size: 45px;
+}
+.sNutrition {
+	font-size: 30px;
 }
 
 a{
