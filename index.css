@@ -115,6 +115,12 @@ body {
 #sMenu {
 	margin-top: 50px;
 }
+.sMeal {
+	font-size: 45px;
+}
+.sNutrition {
+	font-size: 30px;
+}
 
 a{
 	text-decoration: none;
