@@ -73,7 +73,7 @@ body {
 	border-style: solid;
 	padding-bottom: 20px;
 			}
-#placeOne {
+#santorini {
 	padding-bottom: 20px;
 	border-style: dotted;
 	font-family: "Quicksand";
@@ -82,7 +82,7 @@ body {
 	background-position: center;
 	background-size: cover;
 }
-#placeTwo {
+#panda {
 	padding-bottom: 20px;
 	border-style: dotted;
 	font-family: "Quicksand";
@@ -91,7 +91,7 @@ body {
 	background-position: center;
 	background-size: cover;
 }
-#placeThree {
+#lemongrass {
 	padding-bottom: 20px;
 	border-style: dotted;
 	font-family: "Quicksand";
