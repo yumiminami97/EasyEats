@@ -15,28 +15,28 @@ body {
 	color: white;
 	font-size: 1.5em;
 }
-#questionOne {
+#q1 {
 	padding-bottom: 20px;
 	border-style: dotted;
 }
-#questionOneAnswers {
+#q1answers {
 	font-family: "Quicksand";
 	text-align: left;
 }
 
-#questionTwo {
+#q2 {
 	padding-bottom: 20px;
 	border-style: dotted;
 }
-#questionTwoAnswers {
+#q2answers {
 	font-family: "Quicksand";
 	text-align: left;
 }
-#questionThree {
+#q3 {
 	padding-bottom: 20px;
 	border-style: dotted;
 }
-#questionThreeAnswers {
+#q3answers {
 	font-family: "Quicksand";
 	text-align: left;
 }

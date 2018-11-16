@@ -78,32 +78,6 @@
     background-color: #B0C4DE;
     color: white;
   }
-  </style>
-</head>
-<body>
-  <div class= header id=homeScreen>
-    <span onclick="openNav()">
-      <p style= "text-align:left;font-size: 20px">=</p></span>
-    <a href="home.html">
-      <h1 style= "color:white">EasyEats</h1>
-    </a>
-    <p>easy eats for lazy kids</p>
-
-  </div>
-
-  <a href="home.html">
-    <p style = "text-align:left; color: black">< Home</p>
-  </a>
-  <div id="mySidenav" class="sidenav">
-    <h1>Hi, Mikee-Lindsay!</h1>
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="profile.html">My Profile</a>
-    <a href="maps.html">Maps</a>
-    <a href="places.html">Places</a>
-    <a href="mymenuquiz.html">MyMenu</a>
-  </div>
-
-  <style>
 
   .answers {
   	font-family: "Quicksand";
@@ -136,111 +110,104 @@
   .answers input:checked ~ .checkmark {
       background-color: #2196F3;
   }
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .answers:after {
-      content: "";
-      position: absolute;
-      display: none;
-  }
-  /* Show the indicator (dot/circle) when checked */
-  .answers input:checked ~ .checkmark:after {
-      display: block;
-  }
-  /* Style the indicator (dot/circle) */
-  .answers .checkmark:after {
-   	top: 9px;
-  	left: 9px;
-  	width: 8px;
-  	height: 8px;
-  	border-radius: 50%;
-  	background: white;
-  }
+
   </style>
+</head>
+
+<body>
+  <div class= header id=homeScreen>
+    <span onclick="openNav()">
+      <p style= "text-align:left;font-size: 20px">=</p></span>
+    <a href="home.html">
+      <h1 style= "color:white">EasyEats</h1>
+    </a>
+    <p>easy eats for lazy kids</p>
+  </div>
+
+  <a href="home.html">
+    <p style = "text-align:left; color: black">< Home</p>
+  </a>
+  <div id="mySidenav" class="sidenav">
+    <h1>Hi, Mikee-Lindsay!</h1>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="profile.html">My Profile</a>
+    <a href="maps.html">Maps</a>
+    <a href="places.html">Places</a>
+    <a href="mymenuquiz.html">MyMenu</a>
+  </div>
 
   <!-- quiz questions-->
   <h1>MyMenu Quiz</h1>
     <!-- question one-->
-    <div class=question id=questionOne>
+    <div class=question id=q1>
     <h2>
       <p style="text-align:left">Do you have any dietary restrictions?
     </h2>
-      <div class= question id=questionOneAnswers>
+      <div class= question id=q1answers>
         <label class="answers">vegetarian
-          <input type="radio" checked="checked" name="radio">
+          <input type="radio" checked="checked" name="q1"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">vegan
-          <input type="radio" name="radio">
+          <input type="radio" name="q1"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">pescatarian
-          <input type="radio" name="radio">
+          <input type="radio" name="q1"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">no restrictions
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="answers">other
-          <input type="radio" name="radio">
+          <input type="radio" name="q1"/>
           <span class="checkmark"></span>
         </label>
       </div>
     </div>
     <h3></h3>
     <!-- question two-->
-    <div class=question id=questionTwo>
+    <div class=question id=q2>
     <h2>
       <p style="text-align:left">Do you have any allergies?
     </h2>
-      <div class= question id=questionTwoAnswers>
+      <div class= question id=q2answers>
         <label class="answers">dairy
-          <input type="radio" checked="checked" name="radio">
+          <input type="radio" checked="checked" name="q2"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">eggs
-          <input type="radio" name="radio">
+          <input type="radio" name="q2"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">nuts
-          <input type="radio" name="radio">
+          <input type="radio" name="q2"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">no allergies
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="answers">other
-          <input type="radio" name="radio">
+          <input type="radio" name="q2"/>
           <span class="checkmark"></span>
         </label>
       </div>
     </div>
     <h3></h3>
     <!-- question three-->
-    <div class=question id=questionThree>
+    <div class=question id=q3>
     <h2>
       <p style="text-align:left">What price are you willing to pay for your food?
     </h2>
-      <div class= question id=questionThreeAnswers>
+      <div class= question id=q3answers>
         <label class="answers">$5 - $10
-          <input type="radio" checked="checked" name="radio">
+          <input type="radio" checked="checked" name="q3"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">$10 - $15
-          <input type="radio" name="radio">
+          <input type="radio" name="q3"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">$15 - 20
-          <input type="radio" name="radio">
+          <input type="radio" name="q3"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">no preference
-          <input type="radio" name="radio">
-          <span class="checkmark"></span>
-        </label>
-        <label class="answers">other
-          <input type="radio" name="radio">
+          <input type="radio" name="q3"/>
           <span class="checkmark"></span>
         </label>
       </div>
@@ -249,7 +216,7 @@
 
   <!-- when quiz is completed-->
   <div id=submit>
-  <a href= "quizresults.html">
+  <a href= "quizresultsVEG.html">
     <p>Done</p>
   </a>
 </div>
