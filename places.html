@@ -5,7 +5,10 @@
   <title>UCSD Places</title>
   <link	href="index.css"	rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
+  let favoritesArray = [];
+  localStorage.setItem('favorites', JSON.stringify(favoritesArray));
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
     }
@@ -160,7 +163,7 @@
         <h3>Campus eatery specializing in casual Greek fare, such as gyros &
           meat skewers, plus burgers.</h3>
           <div class = "popup" onclick="myFunction()">
-          <button class ="btn"><i class="fa fa-heart"></i></button>
+          <button class ="btn1"><i class="fa fa-heart"></i></button>
           <span class="popuptext" id="myPopup">Added to Favorites!</span>
           </div>
 
@@ -169,6 +172,8 @@
           function myFunction() {
             var popup = document.getElementById("myPopup");
             popup.classList.toggle("show");
+            favoritesArray.push('Santorini Greek Island');
+            localStorage.setItem('favorites', JSON.stringify(favoritesArray));
           }
 </script>
   </div>
@@ -180,15 +185,16 @@
     </a>
       <h3>Fast-food chain for Chinese standards, including some health-conscious options.</h3>
       <div class = "popup" onclick="popUpTwo()">
-      <button class ="btn"><i class="fa fa-heart"></i></button>
+      <button class ="btn2"><i class="fa fa-heart"></i></button>
       <span class="popuptext" id="pop2">Added to Favorites!</span>
       </div>
-      </a>
       <script>
       // When the user clicks on <div>, open the popup
       function popUpTwo() {
         var popup = document.getElementById("pop2");
         popup.classList.toggle("show");
+        favoritesArray.push('Panda Express');
+        localStorage.setItem('favorites', JSON.stringify(favoritesArray));
       }
 </script>
   </div>
@@ -197,23 +203,25 @@
   <div class=place id=lemongrass>
     <a href="lemongrass.html">
       <h1>Lemongrass Plates</h1>
-
+    </a>
       <h3>Thai Fusion - Fresh farm to plate offering using traditional
         lemongrass and the non-GMO ingredients.</h3>
         <div class = "popup" onclick="popUpThree()">
-        <button class ="btn"><i class="fa fa-heart"></i></button>
+        <button class ="btn3"><i class="fa fa-heart"></i></button>
         <span class="popuptext" id="pop3">Added to Favorites!</span>
         </div>
-        </a>
         <script>
         // When the user clicks on <div>, open the popup
         function popUpThree() {
           var popup = document.getElementById("pop3");
           popup.classList.toggle("show");
+          favoritesArray.push('Lemongrass');
+          localStorage.setItem('favorites', JSON.stringify(favoritesArray));
         }
 </script>
   </div>
   <h3></h3>
-</ul>
+    <script src="favorites.js"></script>
+</body>
 
 </html>
