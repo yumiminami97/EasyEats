@@ -17,3 +17,9 @@ function myPlaces() {
         }
     }
 }
+var txt = $('#myInput').val();
+$('.place').each(function(){
+   if($(this).text().toUpperCase().indexOf(txt.toUpperCase()) != -1){
+       $(this).hide();
+   }
+});
