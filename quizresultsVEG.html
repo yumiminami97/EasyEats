@@ -60,6 +60,20 @@
     padding: 20px;
 }
 
+#profileButton a:link, a:visited{
+  background-color: white;
+  color: #B0C4DE;
+  border: 2px solid #B0C4DE;
+  padding: 2.5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#profileButton a:hover, a:active {
+  background-color: #B0C4DE;
+  color: white;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -121,5 +135,11 @@
       <h5>A falafel Pita sandwich, creamy Tahini sauce and one side dish</h5>
   </div>
   <h3></h3>
+  <!-- go back to my profile page -->
+  <div id=profileButton>
+  <a href= "profile.html">
+    <p>Go to My Profile</p>
+  </a>
+  </div>
 
 </html>
