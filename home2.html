@@ -20,8 +20,6 @@
   }
   </script>
   <style>
-  #click{text-align: left}
-  /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -73,6 +71,7 @@
 }
   .option{
     text-align: center;
+    font-family: "Quicksand";
     padding: 20px;
   }
   .option a:link, a:visited{
@@ -82,6 +81,7 @@
     padding: 2.5px 20px;
     text-align: center;
     text-decoration: none;
+    font-family: "Pacifico";
     display: inline-block;
   }
   .option a:hover, a:active {
@@ -118,6 +118,11 @@
     </a>
     <p>easy eats for lazy kids</p>
   </div>
+  <div class= header id=maps>
+    <a href="maps.html">
+      <p>Maps</p>
+    </a>
+  </div>
   <div id="mySidenav" class="sidenav">
     <h1>Hi, Incredibles!</h1>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -125,37 +130,20 @@
     <a href="places.html">Places</a>
     <a href="maps.html">Maps</a>
   </div>
-    <div class = "container">
-      <h1 class ="form-heading">MyMenu</h1>
-      <h3 class ="form-heading">for Incredibles</h3>
-        <div class= "main-div">
-        <div class = "panel">
-          <div class = "panel-body">
-            <div class= "diet">
-            <p style="text-align:left; text-decoration: underline;">My Diet:</p>
-            <ol style="text-align:left;">
-              <p>Vegetarian</p>
-              <p>No allergies</p>
-              <p>Price Range: $5-$10</p>
-            </ol>
-              <a href = quizresultsVEG.html>
-              <button type = "button" class="btn btn-default"> Meal recommendations </button>
-            </a>
-            <a href = mymenuquiz2.html>
-            <button type = "button" class="btn btn-default"> + Edit diet preferences</button>
-          </a>
-        </div>
-        <br>
-        <div class= "favPlaces">
-          <p style="text-align:left; text-decoration: underline;">My Favorite Places:</p>
-          <div id="fave"></div>
-          <ul></ul>
-            <a href = places.html>
-          <button type = "button" class="btn btn-default"> + Add favorite places</button>
-        </a>
-        </div>
-        <script src="favorites.js"></script>
-  </div></div></div>
+  <!-- Use any element to open the sidenav -->
 
+    <div class="option" id="myMenu>">
+      <a href="profile2.html">
+        <h2>My Menu</h2></a>
+        <p></p>
+      <p>A personalized menu suited to meet all of your needs</p>
+    </div>
+    <div class="option" id="places">
+      <a href="places.html">
+        <h2>Places</h2>
+      </a>
+      <p></p>
+      <p>A list of all the food places at UCSD<p>
+      </div>
   </body>
   </html>
