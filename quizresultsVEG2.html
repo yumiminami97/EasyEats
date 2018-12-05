@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Santorini Menu</title>
+  <title>Your Quiz Results</title>
   <link	href="index.css"	rel="stylesheet"/>
   <script>
   /* Set the width of the side navigation to 250px */
@@ -16,7 +16,6 @@
   }
   </script>
   <style>
-  #back{text-align: left;}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -61,6 +60,20 @@
     padding: 20px;
 }
 
+#profileButton a:link, a:visited{
+  background-color: white;
+  color: #B0C4DE;
+  border: 2px solid #B0C4DE;
+  padding: 2.5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+#profileButton a:hover, a:active {
+  background-color: #B0C4DE;
+  color: white;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
@@ -69,57 +82,64 @@
   </style>
 </head>
 <body>
-<!-- Home link --->
-<div class= header id=homeScreen>
-  <span onclick="openNav()">
-    <p style= "text-align:left;font-size: 20px">=</p></span>
-  <a href="home.html">
-    <h1 style= "color:white">EasyEats</h1>
+  <div class= header id=homeScreen>
+    <span onclick="openNav()">
+      <p style= "text-align:left;">=</p></span>
+    <a href="home.html">
+      <h1 style= "color:white">EasyEats</h1>
+    </a>
+    <p>Easy eats for lazy kids</p>
+  </div>
+  <div class= header id=back>
+  <a href="mymenuquiz.html">
+    <p style = "text-align:left">< Quiz</p>
   </a>
-  <p>Easy eats for lazy kids</p>
-</div>
-<div class= header id=back>
-<a href="santorini.html"><p> < Santorini Greek Island Grill</p></a>
 </div>
 <div id="mySidenav" class="sidenav">
-  <h1>Hi, Mikee-Lindsay!</h1>
+  <h1>Hi, Incredibles!</h1>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="profile.html">MyMenu</a>
+  <a href="mymenuquiz.html">MyMenu</a>
   <a href="places.html">Places</a>
+  <a href="profile.html">My Profile</a>
   <a href="maps.html">Maps</a>
 </div>
-<h2>Santorini Greek Island Grill Menu</h2>
-
-  <!-- santorini menu-->
-  <div class=santoriniMenu id=sMenu>
-    <h3>Breakfast</h3>
+  <!-- quiz results-->
+  <h1>Your Quiz Results!</h1>
+  <div class=result id=resultSubtitle>
+    <h2>We recommend the following to best suit your needs:</h2>
   </div>
-    <p id=psm1>Your Choice of Meat Gyros, Ham, Bacon, Sausage, Chicken</p>
-
-    <h6>Served Monday to Friday 7:30am - 11:30am</h6>
-    <div class= meal id=sMeal1>
-  <a href="santorinimeal1nutrition.html">
-  <h4>Pita Scrambles</h4>
- </a>
-  <p>Served on a warm Pita Bread Filled with Eggs, Onions, Tomatoes, Green
-    Peppers & ONE of your favorite Meats</p>
-</div>
-
-  <h3>By Themselves</h3>
-  <div class= meal id=sMeal2>
-    <a href="santorinimeal2nutrition.html">
-  <h4>Island Fries</h4>
+  <!-- first result-->
+  <div class=result id=resultOne>
+    <a href="results1nutrition.html">
+      <h1>Meal #1: Lemongrass Pad Thai</h1>
     </a>
-  <p>Topped with Island Salt</p>
-</div>
-
-  <h3>Island Classics</h3>
-  <div class= meal id=sMeal3>
-    <a href="santorinimeal3nutrition.html">
-  <h4>Gyros Plate</h4>
-</a>
-  <p>Served with Pita Bread, Tzatziki Sauce & Two Sides of Your Choice of either
-    Salad / Fries / Rice / Roasted Veggies</p>
-</div>
+      <h1>- $7.75 -</h1>
+        <h5>Rice Noodles with tofu, eggs, green onions, bean sprouts & crushed peanuts</h5>
+  </div>
+  <h3></h3>
+    <!-- second result-->
+  <div class=result id=resultTwo>
+    <a href="results2nutrition.html">
+      <h1>Meal #2: Panda Express Eggplant Tofu</h1>
+    </a>
+    <h1>- $8.00 -</h1>
+      <h5>Lightly browned tofu, eggplant and red bell peppers tossed in a sweet and spicy sauce</h5>
+  </div>
+  <h3></h3>
+    <!-- third result-->
+  <div class=result id=resultThree>
+    <a href="results3nutrition.html">
+      <h1>Meal #3: Santorini Falafel Pita</h1>
+    </a>
+    <h1>- $6.99 -</h1>
+      <h5>A falafel Pita sandwich, creamy Tahini sauce and one side dish</h5>
+  </div>
+  <h3></h3>
+  <!-- go back to my profile page -->
+  <div id=profileButton>
+  <a href= "profile.html">
+    <p>Go to My Profile</p>
+  </a>
+  </div>
 </body>
 </html>
