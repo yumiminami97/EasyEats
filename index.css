@@ -73,33 +73,6 @@ body {
 	border-style: solid;
 	padding-bottom: 20px;
 			}
-#santorini {
-	padding-bottom: 20px;
-	border-style: dotted;
-	font-family: "Quicksand";
-	background-image: url("Santorini.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-#panda {
-	padding-bottom: 20px;
-	border-style: dotted;
-	font-family: "Quicksand";
-	background-image: url("Panda.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
-#lemongrass {
-	padding-bottom: 20px;
-	border-style: dotted;
-	font-family: "Quicksand";
-	background-image: url("Lemongrass.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-}
 #placeSubtitle {
 	font-family: "Quicksand";
 	font-size: 10px;

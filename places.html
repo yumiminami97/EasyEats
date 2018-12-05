@@ -62,7 +62,33 @@
       transition: margin-left .5s;
       padding: 20px;
   }
-
+  #santorini {
+  	padding-bottom: 20px;
+  	border-style: dotted;
+  	font-family: "Quicksand";
+  }
+  #santorini a:hover, a:active {
+  	background-color: ##D3D3D3;
+  	color: #B0C4DE;
+  }
+  #panda {
+  	padding-bottom: 20px;
+  	border-style: dotted;
+  	font-family: "Quicksand";
+  }
+  #panda a:hover, a:active {
+    background-color: ##D3D3D3;
+    color: #B0C4DE;
+  }
+  #lemongrass {
+  	padding-bottom: 20px;
+  	border-style: dotted;
+  	font-family: "Quicksand";
+  }
+  #lemongrass a:hover, a:active {
+    background-color: ##D3D3D3;
+    color: #B0C4DE;
+  }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -159,31 +185,33 @@
   <!-- Santorini-->
   <div class=place id=santorini>
      <a href="santorini.html">
-      <h1>Santorini Island Grill</h1></a>
+      <h1>Santorini Island Grill</h1>
         <h3>Campus eatery specializing in casual Greek fare, such as gyros &
           meat skewers, plus burgers.</h3>
+      </a>
           <div class = "popup" onclick="myFunction()">
           <button class ="btn1"><i class="fa fa-heart"></i></button>
           <span class="popuptext" id="myPopup">Added to Favorites!</span>
-          </div>
-
-          <script>
-          // When the user clicks on <div>, open the popup
-          function myFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-            favoritesArray.push('Santorini Greek Island');
-            localStorage.setItem('favorites', JSON.stringify(favoritesArray));
-          }
-</script>
   </div>
-  <h3></h3>
+  <script>
+      // When the user clicks on <div>, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+        favoritesArray.push('Santorini Greek Island');
+        localStorage.setItem('favorites', JSON.stringify(favoritesArray));
+      }
+  </script>
+  </div>
+
+<h3></h3>
+
     <!-- Panda Express-->
   <div class=place id=panda>
     <a href="panda.html">
       <h1>Panda Express</h1>
-    </a>
       <h3>Fast-food chain for Chinese standards, including some health-conscious options.</h3>
+    </a>
       <div class = "popup" onclick="popUpTwo()">
       <button class ="btn2"><i class="fa fa-heart"></i></button>
       <span class="popuptext" id="pop2">Added to Favorites!</span>
@@ -203,9 +231,10 @@
   <div class=place id=lemongrass>
     <a href="lemongrass.html">
       <h1>Lemongrass Plates</h1>
-    </a>
+
       <h3>Thai Fusion - Fresh farm to plate offering using traditional
         lemongrass and the non-GMO ingredients.</h3>
+    </a>
         <div class = "popup" onclick="popUpThree()">
         <button class ="btn3"><i class="fa fa-heart"></i></button>
         <span class="popuptext" id="pop3">Added to Favorites!</span>
