@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="handlebars-v4.0.12.js"></script>
   <script>
   /* Set the width of the side navigation to 250px */
   function openNav() {
@@ -113,37 +114,45 @@
   <div class= header id=homeScreen>
     <span onclick="openNav()">
       <p style= "text-align:left;font-size: 20px">=</p></span>
-    <a href="home.html">
+    <a href="home2.html">
       <h1 style= "color:white">EasyEats</h1>
     </a>
-    <p>easy eats for lazy kids</p>
   </div>
-  <div class= header id=maps>
-    <a href="maps.html">
-      <p>Maps</p>
-    </a>
+
+  <div class = title>
+    <h3> Your Personalized Meals </h3>
+    <a href = profile.html>
+    <button type = "button" class="btn btn-default" > See my Profile </button>
+  </a>
   </div>
+  <p></p>
+  <div class="container">
+  <div class="row">
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="foods" id="{{index}}">
+        <a href="{{link}}" class="thumbnail">
+          <img src="{{foodPic}}" class="img">
+          <p>{{title}}</p>
+          <p>{{description}}</p>
+          <p>Price: {{dollars}}</p>
+        </a>
+      </div>
+    </script>
+
+    <div class="col-sm-4" id="templatedProjects">
+    </div>
+<script src=menu.js> </script>
+
+  </div>
+</div>
   <div id="mySidenav" class="sidenav">
     <h1>Hi, Incredibles!</h1>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="profile.html">MyMenu</a>
-    <a href="places.html">Places</a>
+    <a href="profile.html">My Profile</a>
+    <a href="places.html">Campus Food Places</a>
     <a href="maps.html">Maps</a>
   </div>
   <!-- Use any element to open the sidenav -->
 
-    <div class="option" id="myMenu>">
-      <a href="profile.html">
-        <h2>My Menu</h2></a>
-        <p></p>
-      <p>A personalized menu suited to meet all of your needs</p>
-    </div>
-    <div class="option" id="places">
-      <a href="places.html">
-        <h2>Places</h2>
-      </a>
-      <p></p>
-      <p>A list of all the food places at UCSD<p>
-      </div>
   </body>
   </html>

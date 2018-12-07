@@ -3,6 +3,8 @@ function savePrice(price){
 }
 function savePreference(pref){
   localStorage.setItem('q1', pref);
+}
+  /*
   if (pref == "Vegetarian"){
     document.getElementById('myLink').href = "quizresultsVEG.html";
   }
@@ -12,7 +14,7 @@ function savePreference(pref){
   if (pref == "Pescatarian"){
     document.getElementById('myLink').href = "quizresultsPESC.html"
   }
-}
+}*/
 function saveAllergy(algy){
   localStorage.setItem('q2', algy);
 }
