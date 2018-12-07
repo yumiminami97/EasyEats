@@ -136,7 +136,6 @@
   </div>
 
   <!-- quiz questions-->
-
   <h1>My Menu Quiz</h1>
     <!-- question one-->
     <div class=question id=q1>
@@ -145,19 +144,19 @@
     </h2>
       <div class= question id=q1answers>
         <label class="answers">vegetarian
-          <input type="radio" checked="checked" name="q1"/>
+          <input type="radio" checked="checked" name="q1" value="Vegetarian" onclick="savePreference(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">vegan
-          <input type="radio" name="q1"/>
+          <input type="radio" name="q1" value="Vegan" onclick="savePreference(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">pescatarian
-          <input type="radio" name="q1"/>
+          <input type="radio" name="q1" value="Pescatarian" onclick="savePreference(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">no restrictions
-          <input type="radio" name="q1"/>
+          <input type="radio" name="q1" value="No Restriction" onclick="savePreference(this.value)"/>
           <span class="checkmark"></span>
         </label>
       </div>
@@ -169,19 +168,19 @@
     </h2>
       <div class= question id=q2answers>
         <label class="answers">dairy
-          <input type="radio" checked="checked" name="q2"/>
+          <input type="radio" checked="checked" name="q2" value="Dairy Allergy" onclick="saveAllergy(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">eggs
-          <input type="radio" name="q2"/>
+          <input type="radio" name="q2"value="Eggs Allergy" onclick="saveAllergy(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">nuts
-          <input type="radio" name="q2"/>
+          <input type="radio" name="q2" value="Nuts Allergy" onclick="saveAllergy(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">no allergies
-          <input type="radio" name="q2"/>
+          <input type="radio" name="q2" value="No Allergy" onclick="saveAllergy(this.value)"/>
           <span class="checkmark"></span>
         </label>
       </div>
@@ -194,28 +193,28 @@
     </h2>
       <div class= question id=q3answers>
         <label class="answers">$5 - $10
-          <input type="radio" checked="checked" name="q3"/>
+          <input type="radio" checked="checked" name="q3" value="$5-$10" onclick="savePrice(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">$10 - $15
-          <input type="radio" name="q3"/>
+          <input type="radio" name="q3" value="$10-$15" onclick="savePrice(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">$15 - 20
-          <input type="radio" name="q3"/>
+          <input type="radio" name="q3" value="$15-$20" onclick= "savePrice(this.value)"/>
           <span class="checkmark"></span>
         </label>
         <label class="answers">no preference
-          <input type="radio" name="q3"/>
+          <input type="radio" name="q3" value="No Price Preference" onclick= "savePrice(this.value)"/>
           <span class="checkmark"></span>
         </label>
       </div>
     </div>
     <h3></h3>
-
+  <script src="diet.js"></script>
   <!-- when quiz is completed-->
   <div id=submit>
-  <a href= "quizresultsVEG.html">
+  <a href="" id="myLink">
     <p>Done</p>
   </a>
 </div>
