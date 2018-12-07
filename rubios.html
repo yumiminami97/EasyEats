@@ -1,15 +1,10 @@
 <!doctype html>
+
 <html>
 <head>
-  <title>Team Incredibles Project</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link	href="index.css"	rel="stylesheet"/>
-  <!---bootstrap--->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="handlebars-v4.0.12.js"></script>
+  <title>Santorini Greek Island Grill</title>
+  <link	href="index.css"	rel="stylesheet"	/>
   <script>
   /* Set the width of the side navigation to 250px */
   function openNav() {
@@ -21,6 +16,7 @@
   }
   </script>
   <style>
+  #back{text-align: left;}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -64,92 +60,90 @@
     transition: margin-left .5s;
     padding: 20px;
 }
+#santorini a:link, a:visited{
+  background-color: white;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 2.5px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+#santorini a:hover, a:active {
+  background-color: #B0C4DE;
+  color: white;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-  .option{
+
+  .rPage{
+    text-decoration: underline;
     text-align: center;
     font-family: "Quicksand";
-    padding: 20px;
+    font-size: 20px;
   }
-  .option a:link, a:visited{
-    background-color: white;
-    color: #B0C4DE;
-    border: 2px solid #B0C4DE;
-    padding: 2.5px 20px;
+  .hours{
     text-align: center;
-    text-decoration: none;
-    font-family: "Pacifico";
-    display: inline-block;
+    font-family: "Quicksand";
+    font-size: 15px;
   }
-  .option a:hover, a:active {
-    background-color: #B0C4DE;
-    color: white;
-  }
-  #maps{
-    padding-top: 0px;
-  }
-  #maps a:link, a:visited{
-    background-color: white;
-    color: black;
-    border: 2px solid #B0C4DE;
-    border-top: 2px solid #B0C4DE;
-    padding: 2px 20px;
-    padding-bottom: 0.5px
+  .currTime{
+    text-decoration: underline;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    font-family: "Quicksand";
+    font-size: 20px;
   }
-  #maps a:hover, a:active {
-    background-color: #B0C4DE;
-    color: white;
+  .waitTime{
+    text-align: center;
+    font-family: "Quicksand";
+    font-size: 15px;
   }
-}
-</style>
+  </style>
 </head>
 <body>
   <div class= header id=homeScreen>
     <span onclick="openNav()">
       <p style= "text-align:left;font-size: 20px">=</p></span>
-    <a href="home2.html">
+    <a href="home.html">
       <h1 style= "color:white">EasyEats</h1>
     </a>
+    <p>Easy eats for lazy kids</p>
   </div>
-
-  <div class = title>
-    <h3> Panda Menu </h3>
-  </div>
-
-  <div class="container">
-  <div class="row">
-    <script id="entry-template" type="text/x-handlebars-template">
-      <div class="foods" id="{{index}}">
-        <a href="{{link}}" class="thumbnail">
-          <img src="{{foodPic}}" class="img">
-          <p>{{title}}</p>
-          <p>{{description}}</p>
-          <p>Price: {{dollars}}</p>
-        </a>
-      </div>
-    </script>
-
-    <div class="col-sm-4" id="templatedProjects">
-    </div>
-<script src=panda.js> </script>
-
-  </div>
+  <div class= header id=back>
+  <a href="places.html">
+    <p style = "text-align:left">< Places</p>
+  </a>
 </div>
   <div id="mySidenav" class="sidenav">
-    <h1>Hi, Incredibles!</h1>
+    <h1>Hi, Mikee-Lindsay!</h1>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="profile.html">My Profile</a>
-    <a href="places.html">Campus Food Places</a>
+    <a href="profile.html">MyMenu</a>
+    <a href="places.html">Places</a>
     <a href="maps.html">Maps</a>
   </div>
-  <!-- Use any element to open the sidenav -->
-
-  </body>
-  </html>
+  <!-- santorini info page-->
+  <h1>Rubio's</h1>
+  <div class= rPage id=sPage>
+    <h3>Hours:</h3>
+    </div>
+      <div class= hours id=sHours>
+      <p>Mon-Fri: 7:00am - 6:50pm</p>
+      <p>Sat: 8:00am - 11:00pm</p>
+      <p>Sat: 8:00am - 10:00pm</p>
+    </div>
+    <div class= currTime id=sCurrWait>
+      <h3>Current Wait: 10 min</h3>
+      </div>
+        <div class= waitTime id=sWaitTime>
+        <p>Avg Wait Time: 7min</p>
+      </div>
+  <div class= restaurant id=santorini>
+    <a href="rubiosmenu.html">
+      <p>Rubio's Menu</p>
+    </a>
+  </div>
+</body>
+</html>

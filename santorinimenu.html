@@ -1,10 +1,15 @@
 <!doctype html>
-
 <html>
 <head>
+  <title>Team Incredibles Project</title>
   <meta charset="utf-8">
-  <title>Santorini Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link	href="index.css"	rel="stylesheet"/>
+  <!---bootstrap--->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="handlebars-v4.0.12.js"></script>
   <script>
   /* Set the width of the side navigation to 250px */
   function openNav() {
@@ -16,7 +21,6 @@
   }
   </script>
   <style>
-  #back{text-align: left;}
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -66,60 +70,86 @@
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-  </style>
+  .option{
+    text-align: center;
+    font-family: "Quicksand";
+    padding: 20px;
+  }
+  .option a:link, a:visited{
+    background-color: white;
+    color: #B0C4DE;
+    border: 2px solid #B0C4DE;
+    padding: 2.5px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: "Pacifico";
+    display: inline-block;
+  }
+  .option a:hover, a:active {
+    background-color: #B0C4DE;
+    color: white;
+  }
+  #maps{
+    padding-top: 0px;
+  }
+  #maps a:link, a:visited{
+    background-color: white;
+    color: black;
+    border: 2px solid #B0C4DE;
+    border-top: 2px solid #B0C4DE;
+    padding: 2px 20px;
+    padding-bottom: 0.5px
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  #maps a:hover, a:active {
+    background-color: #B0C4DE;
+    color: white;
+  }
+}
+</style>
 </head>
 <body>
-<!-- Home link --->
-<div class= header id=homeScreen>
-  <span onclick="openNav()">
-    <p style= "text-align:left;font-size: 20px">=</p></span>
-  <a href="home.html">
-    <h1 style= "color:white">EasyEats</h1>
-  </a>
-  <p>Easy eats for lazy kids</p>
-</div>
-<div class= header id=back>
-<a href="santorini.html"><p> < Santorini Greek Island Grill</p></a>
-</div>
-<div id="mySidenav" class="sidenav">
-  <h1>Hi, Mikee-Lindsay!</h1>
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="profile.html">MyMenu</a>
-  <a href="places.html">Places</a>
-  <a href="maps.html">Maps</a>
-</div>
-<h2>Santorini Greek Island Grill Menu</h2>
-
-  <!-- santorini menu-->
-  <div class=santoriniMenu id=sMenu>
-    <h3>Breakfast</h3>
-  </div>
-    <p id=psm1>Your Choice of Meat Gyros, Ham, Bacon, Sausage, Chicken</p>
-
-    <h6>Served Monday to Friday 7:30am - 11:30am</h6>
-    <div class= meal id=sMeal1>
-  <a href="santorinimeal1nutrition.html">
-  <h4>Pita Scrambles</h4>
- </a>
-  <p>Served on a warm Pita Bread Filled with Eggs, Onions, Tomatoes, Green
-    Peppers & ONE of your favorite Meats</p>
-</div>
-
-  <h3>By Themselves</h3>
-  <div class= meal id=sMeal2>
-    <a href="santorinimeal2nutrition.html">
-  <h4>Island Fries</h4>
+  <div class= header id=homeScreen>
+    <span onclick="openNav()">
+      <p style= "text-align:left;font-size: 20px">=</p></span>
+    <a href="home2.html">
+      <h1 style= "color:white">EasyEats</h1>
     </a>
-  <p>Topped with Island Salt</p>
-</div>
+  </div>
 
-  <h3>Island Classics</h3>
-  <div class= meal id=sMeal3>
-    <a href="santorinimeal3nutrition.html">
-  <h4>Gyros Plate</h4>
-</a>
-  <p>Served with Pita Bread, Tzatziki Sauce & Two Sides of Your Choice of either
-    Salad / Fries / Rice / Roasted Veggies</p>
+  <div class = title>
+    <h3> Santorini Menu </h3>
+  </div>
+
+  <div class="container">
+  <div class="row">
+    <script id="entry-template" type="text/x-handlebars-template">
+      <div class="foods" id="{{index}}">
+        <a href="{{link}}" class="thumbnail">
+          <img src="{{foodPic}}" class="img">
+          <p>{{title}}</p>
+          <p>{{description}}</p>
+          <p>Price: {{dollars}}</p>
+        </a>
+      </div>
+    </script>
+
+    <div class="col-sm-4" id="templatedProjects">
+    </div>
+<script src=santorini.js> </script>
+
+  </div>
 </div>
-</body>
-</html>
+  <div id="mySidenav" class="sidenav">
+    <h1>Hi, Incredibles!</h1>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="profile.html">My Profile</a>
+    <a href="places.html">Campus Food Places</a>
+    <a href="maps.html">Maps</a>
+  </div>
+  <!-- Use any element to open the sidenav -->
+
+  </body>
+  </html>

@@ -60,47 +60,49 @@
     transition: margin-left .5s;
     padding: 20px;
 }
+#santorini a:link, a:visited{
+  background-color: white;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 2.5px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+#santorini a:hover, a:active {
+  background-color: #B0C4DE;
+  color: white;
+}
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
 }
-  .restaurant{
-    text-align: center;
-    border:solid;
-    border-radius: 50px;
-    font-family:monospace;
-  }
+
   .rPage{
     text-decoration: underline;
-    text-align: left;
-    padding-left: 50px;
+    text-align: center;
     font-family: "Quicksand";
     font-size: 20px;
   }
   .hours{
-    text-align: left;
-    padding-left: 75px;
+    text-align: center;
     font-family: "Quicksand";
-    font-size: 20px;
+    font-size: 15px;
   }
   .currTime{
     text-decoration: underline;
-    text-align: left;
-    padding-left: 50px;
+    text-align: center;
     font-family: "Quicksand";
     font-size: 20px;
   }
   .waitTime{
-    text-align: left;
-    padding-left: 75px;
+    text-align: center;
     font-family: "Quicksand";
-    font-size: 20px;
+    font-size: 15px;
   }
   </style>
 </head>
-
 <body>
   <div class= header id=homeScreen>
     <span onclick="openNav()">
@@ -111,7 +113,9 @@
     <p>Easy eats for lazy kids</p>
   </div>
   <div class= header id=back>
-  <a href="places.html"><p>< Places</p></a>
+  <a href="places.html">
+    <p style = "text-align:left">< Places</p>
+  </a>
 </div>
   <div id="mySidenav" class="sidenav">
     <h1>Hi, Mikee-Lindsay!</h1>
@@ -123,7 +127,7 @@
   <!-- santorini info page-->
   <h1>Santorini Greek Island Grill</h1>
   <div class= rPage id=sPage>
-    <h1>Hours:</h2>
+    <h3>Hours:</h3>
     </div>
       <div class= hours id=sHours>
       <p>Mon-Fri: 7:00am - 6:50pm</p>
@@ -131,15 +135,15 @@
       <p>Sat: 8:00am - 10:00pm</p>
     </div>
     <div class= currTime id=sCurrWait>
-      <h1>Current Wait: 10 min</h2>
+      <h3>Current Wait: 10 min</h3>
       </div>
         <div class= waitTime id=sWaitTime>
         <p>Avg Wait Time: 7min</p>
       </div>
   <div class= restaurant id=santorini>
-  <a href="santorinimenu.html">
-    <p>Santorini Menu</p>
-  </a>
-</div>
+    <a href="santorinimenu.html">
+      <p>Santorini Menu</p>
+    </a>
+  </div>
 </body>
 </html>

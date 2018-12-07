@@ -89,6 +89,15 @@
     background-color: ##D3D3D3;
     color: #B0C4DE;
   }
+  #rubios {
+    padding-bottom: 20px;
+    border-style: dotted;
+    font-family: "Quicksand";
+  }
+  #rubios a:hover, a:active {
+    background-color: ##D3D3D3;
+    color: #B0C4DE;
+  }
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
   @media screen and (max-height: 450px) {
       .sidenav {padding-top: 15px;}
@@ -250,6 +259,29 @@
 </script>
   </div>
   <h3></h3>
+  <!-- Rubio's-->
+<div class=place id=rubios>
+  <a href="rubios.html">
+    <h1>Rubio's</h1>
+
+    <h3>Rubio's Restaurants proudly serve delicious, coastal inspired fish tacos,
+    seafood & other dishes.</h3>
+  </a>
+      <div class = "popup" onclick="popUpThree()">
+      <button class ="btn3"><i class="fa fa-heart"></i></button>
+      <span class="popuptext" id="pop3">Added to Favorites!</span>
+      </div>
+      <script>
+      // When the user clicks on <div>, open the popup
+      function popUpThree() {
+        var popup = document.getElementById("pop3");
+        popup.classList.toggle("show");
+        favoritesArray.push("Rubio's");
+        localStorage.setItem('favorites', JSON.stringify(favoritesArray));
+      }
+</script>
+</div>
+<h3></h3>
     <script src="favorites.js"></script>
 </body>
 

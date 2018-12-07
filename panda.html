@@ -3,99 +3,103 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Panda Express</title>
-  <link	href="index.css"	rel="stylesheet"/>
+  <title>Santorini Greek Island Grill</title>
+  <link	href="index.css"	rel="stylesheet"	/>
   <script>
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "250px";
-    }
-    /* Set the width of the side navigation to 0 */
-    function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
-    <style>
-    #back{text-align: left}
-  .sidenav {
-      height: 100%; /* 100% Full-height */
-      width: 0; /* 0 width - change this with JavaScript */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Stay on top */
-      top: 0; /* Stay at the top */
-      left: 0;
-      background-color: white; /* Black*/
-      overflow-x: hidden; /* Disable horizontal scroll */
-      padding-top: 60px; /* Place content 60px from the top */
-      transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  /* Set the width of the side navigation to 250px */
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
   }
+  /* Set the width of the side navigation to 0 */
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+  <style>
+  #back{text-align: left;}
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: white; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
 
-  /* The navigation menu links */
-  .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #B0C4DE;
-      display: block;
-      transition: 0.3s;
-  }
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #B0C4DE;
+    display: block;
+    transition: 0.3s;
+}
 
-  /* When you mouse over the navigation links, change their color */
-  .sidenav a:hover {
-      color: #f1f1f1;
-  }
-  .sidenav a:visited{color:#B0C4DE;}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav a:visited{color:#B0C4DE;}
 
-  /* Position and style the close button (top right corner) */
-  .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-  }
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
 
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
-      transition: margin-left .5s;
-      padding: 20px;
-  }
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+#santorini a:link, a:visited{
+  background-color: white;
+  color: #000000;
+  border: 2px solid #000000;
+  padding: 2.5px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+#santorini a:hover, a:active {
+  background-color: #B0C4DE;
+  color: white;
+}
 
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
-  }
-  .restaurant{
-    text-align: center;
-    border:solid;
-    border-radius: 50px;
-    font-family:monospace;
-  }
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
   .rPage{
     text-decoration: underline;
-    text-align: left;
-    padding-left: 50px;
+    text-align: center;
     font-family: "Quicksand";
     font-size: 20px;
   }
   .hours{
-    text-align: left;
-    padding-left: 75px;
+    text-align: center;
     font-family: "Quicksand";
-    font-size: 20px;
+    font-size: 15px;
   }
   .currTime{
     text-decoration: underline;
-    text-align: left;
-    padding-left: 50px;
+    text-align: center;
     font-family: "Quicksand";
     font-size: 20px;
   }
   .waitTime{
-    text-align: left;
-    padding-left: 75px;
+    text-align: center;
     font-family: "Quicksand";
-    font-size: 20px;
+    font-size: 15px;
   }
   </style>
 </head>
@@ -120,26 +124,26 @@
     <a href="places.html">Places</a>
     <a href="maps.html">Maps</a>
   </div>
-  <!-- Panda info page-->
+  <!-- santorini info page-->
   <h1>Panda Express</h1>
   <div class= rPage id=sPage>
-    <h1>Hours:</h2>
+    <h3>Hours:</h3>
     </div>
-      <div class= hours id=pHours>
+      <div class= hours id=sHours>
       <p>Mon-Fri: 7:00am - 6:50pm</p>
       <p>Sat: 8:00am - 11:00pm</p>
       <p>Sat: 8:00am - 10:00pm</p>
     </div>
-    <div class= currTime id=pCurrWait>
-      <h1>Current Wait: 10 min</h2>
+    <div class= currTime id=sCurrWait>
+      <h3>Current Wait: 10 min</h3>
       </div>
-        <div class= waitTime id=pWaitTime>
+        <div class= waitTime id=sWaitTime>
         <p>Avg Wait Time: 7min</p>
       </div>
-  <div class= restaurant id=panda>
-  <a href="pandamenu.html">
-    <p>Panda Express Menu</p>
-  </a>
+  <div class= restaurant id=santorini>
+    <a href="pandamenu.html">
+      <p>Panda Menu</p>
+    </a>
   </div>
 </body>
-  </html>
+</html>
