@@ -1,25 +1,29 @@
 
 function myPlaces() {
-    // Declare variables
-    var input, filter, ul, li, a, i;
-    input = document.getElementById('myInput');
-    filter = input.value.toUpperCase();
-    ul = document.getElementById("myUL");
-    li = ul.getElementsByTagName('li');
+ var input = document.getElementById('myInput').value;
+ if (input == 'santorini' || input=='Santorini'){
+   $("#santorini").show();
+   $("#panda").hide();
+   $("#lemongrass").hide();
+   $("#rubios").hide();
+ }
+ if (input == 'panda' || input=='Panda'){
+   $("#panda").show();
+   $("#santorini").hide();
+   $("#lemongrass").hide();
+   $("#rubios").hide();
+ }
+ if (input == 'lemongrass' || input == 'Lemongrass'){
+   $("#lemongrass").show();
+   $("#santorini").hide();
+   $("#panda").hide();
+   $("#rubios").hide();
+ }
 
-    // Loop through all list items, and hide those who don't match the search query
-    for (i = 0; i < li.length; i++) {
-        a = li[i].getElementsByTagName("a")[0];
-        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "";
-        } else {
-            li[i].style.display = "none";
-        }
-    }
+ if (input == 'rubios' || input == 'Rubios'){
+   $("#rubios").show();
+   $("#santorini").hide();
+   $("#panda").hide();
+   $("#lemongrass").hide();
+ }
 }
-var txt = $('#myInput').val();
-$('.place').each(function(){
-   if($(this).text().toUpperCase().indexOf(txt.toUpperCase()) != -1){
-       $(this).hide();
-   }
-});

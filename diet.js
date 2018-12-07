@@ -1,20 +1,18 @@
+if (localStorage.getItem('q1') == null){
+  localStorage.setItem('q1', 'No Restrictions');
+}
+if (localStorage.getItem('q2') == null){
+  localStorage.setItem('q2', 'No Allergy');
+}
+if (localStorage.getItem('q1=3') == null){
+  localStorage.setItem('q3', 'No Price Preference');
+}
 function savePrice(price){
   localStorage.setItem('q3', price);
 }
 function savePreference(pref){
   localStorage.setItem('q1', pref);
 }
-  /*
-  if (pref == "Vegetarian"){
-    document.getElementById('myLink').href = "quizresultsVEG.html";
-  }
-  if (pref =="Vegan"){
-    document.getElementById('myLink').href = "quizresultsVEGAN.html"
-  }
-  if (pref == "Pescatarian"){
-    document.getElementById('myLink').href = "quizresultsPESC.html"
-  }
-}*/
 function saveAllergy(algy){
   localStorage.setItem('q2', algy);
 }

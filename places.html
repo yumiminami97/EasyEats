@@ -19,6 +19,52 @@
     </script>
   </head>
     <style>
+    .bar{
+      padding-left: 10px;
+      padding-top: 10px;
+      text-align: left;
+    }
+    .topnav a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    .topnav a.active {
+      background-color: #2196F3;
+      color: white;
+    }
+
+    .topnav .search-container {
+      float: center;
+    }
+
+    .topnav input[type=text] {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 30px;
+      border: none;
+    }
+
+    .topnav .search-container button {
+      float: right;
+      padding: 6px 10px;
+      margin-top: 8px;
+      margin-right: 16px;
+      background: #ddd;
+      font-size: 17px;
+      border: none;
+      cursor: pointer;
+    }
+    .topnav .search-container button:hover {
+  background: #B0C4DE;
+}
+      .topnav input[type=text] {
+        border: 1px solid #ccc;
+      }
   .sidenav {
       height: 100%; /* 100% Full-height */
       width: 0; /* 0 width - change this with JavaScript */
@@ -162,11 +208,12 @@
   </style>
 </head>
 <div class= header id=homeScreen>
+  <div class="bar">
   <span onclick="openNav()">
-    <p style= "text-align:left;font-size: 20px">=</p></span>
+    <i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
   <a href="home.html">
     <h1 style= "color:white">EasyEats</h1></a>
-  <p>Easy eats for lazy kids</p>
 </div>
 <div class="header" id="back">
   <a href="home.html">
@@ -174,25 +221,28 @@
   </a>
 </div>
 <div id="mySidenav" class="sidenav">
-  <h1>Hi, Mikee-Lindsay!</h1>
+  <h1>Hi, Incredibles!</h1>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="profile.html">MyMenu</a>
+  <a href="profile.html">My Profile</a>
   <a href="places.html">Places</a>
   <a href="maps.html">Maps</a>
 </div>
   <!-- places-->
  <div class=ucsdFood id=ucsdFoodTitle>
   <h1>UCSD Food</h1>
+  <p style="font-size: 10px;">click on a place to see their hours, wait times & menu!</p>
+  <h3></h3>
 </div>
-  <div class=place id=placeSubtitle>
-    <h2>- click on a place to see their hours, wait times & menu! -</h2>
-  </div>
-  <input type="text" id="myInput" onkeyup="myPlaces()" placeholder="Search for places...">
+
+  <div class="topnav">
+ <input type="text"  id="myInput"  onkeyup="myPlaces()" placeholder="Search for places.." values = "" name="search">
+ <button type="submit" onclick="myPlaces()"><i class="fa fa-search"></i></button>
   <script src=places.js></script>
-  <ul id="myUL">
+  </div>
+
 <h3></h3>
-  <!-- Santorini-->
-  <div class=place id=santorini>
+  <!-- Santorini- <div class=place >-><!-->
+  <div class="place" id="santorini">
      <a href="santorini.html">
       <h1>Santorini Island Grill</h1>
         <h3>Campus eatery specializing in casual Greek fare, such as gyros &
@@ -212,11 +262,10 @@
       }
   </script>
   </div>
-
 <h3></h3>
 
     <!-- Panda Express-->
-  <div class=place id=panda>
+      <div class ="places" id="panda">
     <a href="panda.html">
       <h1>Panda Express</h1>
       <h3>Fast-food chain for Chinese standards, including some health-conscious options.</h3>
@@ -237,7 +286,7 @@
   </div>
   <h3></h3>
     <!-- Lemongrass-->
-  <div class=place id=lemongrass>
+        <div class= "place" id="lemongrass">
     <a href="lemongrass.html">
       <h1>Lemongrass Plates</h1>
 
@@ -260,21 +309,21 @@
   </div>
   <h3></h3>
   <!-- Rubio's-->
-<div class=place id=rubios>
+      <div class= place id=rubios>
   <a href="rubios.html">
     <h1>Rubio's</h1>
 
     <h3>Rubio's Restaurants proudly serve delicious, coastal inspired fish tacos,
     seafood & other dishes.</h3>
   </a>
-      <div class = "popup" onclick="popUpThree()">
+      <div class = "popup" onclick="popUpFour()">
       <button class ="btn3"><i class="fa fa-heart"></i></button>
-      <span class="popuptext" id="pop3">Added to Favorites!</span>
+      <span class="popuptext" id="pop4">Added to Favorites!</span>
       </div>
       <script>
       // When the user clicks on <div>, open the popup
-      function popUpThree() {
-        var popup = document.getElementById("pop3");
+      function popUpFour() {
+        var popup = document.getElementById("pop4");
         popup.classList.toggle("show");
         favoritesArray.push("Rubio's");
         localStorage.setItem('favorites', JSON.stringify(favoritesArray));

@@ -7,6 +7,7 @@
   <link	href="index.css"	rel="stylesheet"/>
   <!---bootstrap--->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script>
@@ -20,6 +21,11 @@
   }
   </script>
   <style>
+  .bar{
+    padding-left: 10px;
+    padding-top: 10px;
+    text-align: left;
+  }
   #click{text-align: left}
   /* The side navigation menu */
 .sidenav {
@@ -111,8 +117,10 @@
 </head>
 <body>
   <div class= header id=homeScreen>
+    <div class="bar">
     <span onclick="openNav()">
-      <p style= "text-align:left;font-size: 20px">=</p></span>
+      <i class="fa fa-bars" aria-hidden="true"></i></span>
+        </div>
     <a href="home.html">
       <h1 style= "color:white">EasyEats</h1>
     </a>
@@ -121,7 +129,7 @@
   <div id="mySidenav" class="sidenav">
     <h1>Hi, Incredibles!</h1>
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="profile.html">My Menu</a>
+    <a href="profile.html">My Profile</a>
     <a href="places.html">Places</a>
     <a href="maps.html">Maps</a>
   </div>
@@ -148,8 +156,11 @@
         <br>
         <div class= "favPlaces">
           <p style="text-align:left; text-decoration: underline;">My Favorite Places:</p>
-          <div id="fave"></div>
+
+          <div id="fave" style= "text-align: left">
           <ul></ul>
+        </div>
+
             <a href = places.html>
           <button type = "button" class="btn btn-default"> + Add Favorite Places</button>
         </a>
