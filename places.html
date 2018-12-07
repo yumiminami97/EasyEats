@@ -5,6 +5,7 @@
   <title>UCSD Places</title>
   <link	href="index.css"	rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
   let favoritesArray = [];
@@ -19,6 +20,19 @@
     </script>
   </head>
     <style>
+    .rest{
+      padding: 20px;
+    }
+    a:visited{
+      color: black;
+      text-decoration: none;
+    }
+    a{
+      text-decoration: none;
+    }
+    .header{
+      padding: 25px;
+    }
     .bar{
       padding-left: 10px;
       padding-top: 10px;
@@ -214,6 +228,7 @@
       </div>
   <a href="home.html">
     <h1 style= "color:white">EasyEats</h1></a>
+    <p>easy eats for lazy kids</p>
 </div>
 <div class="header" id="back">
   <a href="home.html">
@@ -224,12 +239,12 @@
   <h1>Hi, Incredibles!</h1>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="profile.html">My Profile</a>
-  <a href="places.html">Places</a>
+  <a href="places.html">Restaurants</a>
   <a href="maps.html">Maps</a>
 </div>
   <!-- places-->
  <div class=ucsdFood id=ucsdFoodTitle>
-  <h1>UCSD Food</h1>
+  <h1>Restaurants at UCSD </h1>
   <p style="font-size: 10px;">click on a place to see their hours, wait times & menu!</p>
   <h3></h3>
 </div>
@@ -242,6 +257,7 @@
 
 <h3></h3>
   <!-- Santorini- <div class=place >-><!-->
+  <div class= rest>
   <div class="place" id="santorini">
      <a href="santorini.html">
       <h1>Santorini Island Grill</h1>
@@ -265,7 +281,7 @@
 <h3></h3>
 
     <!-- Panda Express-->
-      <div class ="places" id="panda">
+      <div class ="place" id="panda">
     <a href="panda.html">
       <h1>Panda Express</h1>
       <h3>Fast-food chain for Chinese standards, including some health-conscious options.</h3>
@@ -329,6 +345,7 @@
         localStorage.setItem('favorites', JSON.stringify(favoritesArray));
       }
 </script>
+</div>
 </div>
 <h3></h3>
     <script src="favorites.js"></script>

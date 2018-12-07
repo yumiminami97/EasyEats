@@ -85,3 +85,20 @@ a{
 a:hover{
 	cursor: pointer;
 }
+.bar{
+	padding-left: 10px;
+	padding-top: 10px;
+	text-align: left;
+}
+.rMeal{
+	zoom: 200%;
+}
+.sMeal{
+	zoom: 200%;
+}
+.lMeal{
+	zoom: 200%;
+}
+.pMeal{
+	zoom: 200%;
+}
