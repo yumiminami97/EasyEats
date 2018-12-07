@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <title>Santorini Greek Island Grill</title>
   <link	href="index.css"	rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script>
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
@@ -69,25 +71,29 @@
   }
   </style>
 </head>
-  <div class= header id=homeScreen>
-    <span onclick="openNav()">
-      <p style= "text-align:left;font-size: 20px">=</p></span>
-    <a href="home.html">
-      <h1 style= "color:white">EasyEats</h1>
-    </a>
-    <p>Easy eats for lazy kids</p>
-  </div>
+<body>
+<div class= header id=homeScreen>
+  <div class="bar" style= "text-align: left">
+  <span onclick="openNav()">
+    <i class="fa fa-bars" aria-hidden="true" ></i></span>
+      </div>
+  <a href="home.html">
+    <h1 style= "color:white">EasyEats</h1>
+  </a>
+  <p>easy eats for lazy kids</p>
+</div>
+<div id="mySidenav" class="sidenav">
+  <h1>Hi, Incredibles!</h1>
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="profile.html">My Profile</a>
+  <a href="restaurants.html">Restaurants</a>
+  <a href="maps.html">Maps</a>
+</div>
+<div class=body id=back style= "text-align: left">
 <a href="santorinimenu.html">
   <p> < Santorini Menu </p>
 </a>
-<body>
-  <div id="mySidenav" class="sidenav">
-    <h1>Hi, Mikee-Lindsay!</h1>
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="profile.html">MyMenu</a>
-    <a href="places.html">Places</a>
-    <a href="maps.html">Maps</a>
-  </div>
+</div>
   <!-- lemon meal 1 nutrition facts-->
 <div class=sMeal id=saM2>
   <h2>Greek Salad</h2>
