@@ -61,18 +61,6 @@ body {
 #nutritionOne {
 	font-family: "Quicksand";
 }
-#sMeal1 {
-	border-style: solid;
-	padding-bottom: 20px;
-	}
-#sMeal2 {
-	border-style: solid;
-	padding-bottom: 20px;
-		}
-#sMeal3 {
-	border-style: solid;
-	padding-bottom: 20px;
-			}
 #placeSubtitle {
 	font-family: "Quicksand";
 	font-size: 10px;
@@ -88,11 +76,6 @@ body {
 #sMenu {
 	margin-top: 50px;
 }
-.sMeal {
-	font-size: 45px;
-}
-.sNutrition {
-	font-size: 30px;
 }
 
 a{
